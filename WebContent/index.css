@@ -18,8 +18,9 @@ nav{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align items to the start of the nav container */
     padding: 10px;
+    gap: 20px; /* Add spacing between elements in the nav */
 }
 
 .logo{
@@ -28,10 +29,11 @@ nav{
 }
 
 nav ul{
-    list-style: none;
-    width: 100%;
-    text-align: right;
-    padding-right: 50%;
+   list-style: none;
+    display: flex; /* Change for flex alignment */
+    gap: 20px; /* Space between the list items */
+    margin: 0; /* Reset margin for proper spacing */
+    padding: 0; /* Reset padding for proper spacing */
 }
 
 nav ul li{
@@ -52,9 +54,12 @@ nav ul li a {
     border: 0;
     outline: 0;
     border-radius: 5px;
-    background: purple;
+    background: #5e17eb;
     font-weight: 500;
+    font-size: 16px;
+    color: #fff;
     cursor: pointer;
+    margin-left: 80px; /* Add space between the last hyperlink and button */
 }
 
 .searchform form{
@@ -79,7 +84,7 @@ nav ul li a {
 }
 
 .content{
-    margin-top: 8%;
+    margin-top: 3%;
     color: #fff;
     max-width: 620px;
     margin-left: 50px;
