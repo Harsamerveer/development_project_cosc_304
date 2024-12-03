@@ -12,7 +12,7 @@
 		<img src="img/mondologo.png" alt="Mondo Books" class="logo">
 		<ul>
 			<li><a href="listprod.jsp">Begin Shopping</a></li>
-			<li><a href="listorder.jsp">List All Orders</a>></li>
+			<li><a href="listorder.jsp">List All Orders</a></li>
 			<li><a href="customer.jsp">My Profile</a></li>
 			<li><a href="admin.jsp">Administrators</a></li>
 			<li><a href="logout.jsp">Log out</a></li>

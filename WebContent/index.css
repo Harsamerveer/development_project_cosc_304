@@ -11,7 +11,7 @@
     background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(img/background.jpg);
     background-size: cover;
     background-position: center;
-    padding: 10px 8%;
+    padding: 10px;
 }
 
 nav{
@@ -32,7 +32,28 @@ nav ul{
     list-style: none;
     width: 100%;
     text-align: right;
-    padding-right: 60%;
-
+    padding-right: 20%;
 }
 
+nav ul li{
+    display: inline-block;
+    margin: 30px 20px;
+}
+
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: purple;
+    font-weight: 500;
+    cursor: pointer;
+}
