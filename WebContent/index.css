@@ -11,7 +11,7 @@
     background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(img/background.jpg);
     background-size: cover;
     background-position: center;
-    padding: 10px;
+    padding: 0px;
 }
 
 nav{
@@ -19,8 +19,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
-    background: #fff;
+    padding: 10px;
 }
 
 .logo{
@@ -32,7 +31,7 @@ nav ul{
     list-style: none;
     width: 100%;
     text-align: right;
-    padding-right: 20%;
+    padding-right: 50%;
 }
 
 nav ul li{
@@ -42,7 +41,7 @@ nav ul li{
 
 
 nav ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -57,3 +56,40 @@ nav ul li a {
     font-weight: 500;
     cursor: pointer;
 }
+
+.searchform form{
+    display: flex;
+    align-items: left;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 830px;
+}
+
+.searchform form input{
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.content{
+    margin-top: 8%;
+    color: #fff;
+    max-width: 620px;
+    margin-left: 50px;
+}
+
+.content h1{
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 85px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+
