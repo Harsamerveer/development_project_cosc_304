@@ -1,34 +1,38 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
 
-    background-image: url(background.jpg);
-    text-align: center;
-    font-size: 0.8em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(img/background.jpg);
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    padding: 10px 8%;
 }
 
-input[type=text]:focus, input[type=number]:focus, input[type=email]:focus, input[type=tel]:focus  {
-    background-color: lightblue;
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background: #fff;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer ;
+.logo{
+    width: 180px;
+    cursor: pointer;
 }
 
-div {
-    background-color: #ede1ae85;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    margin-left: 57px;
-    margin-right: 56px;
-    padding: 10px;
-    border-radius: 30px;
-    box-shadow: 0px 14px 0px 3px rgba(25, 0, 0, 0.1);
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60%;
+
 }
+
