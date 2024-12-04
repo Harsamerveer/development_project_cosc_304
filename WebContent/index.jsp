@@ -18,11 +18,11 @@
 			<li><a href="admin.jsp">Administrators</a></li>
 			<li><a href="logout.jsp">Log out</a></li>
 		</ul>
-		<button class="btn"> Login </button>
+		<button class="btn"> <a href="login.jsp">Login </a></button>
 	</nav>
 
 	<nav>
-		<img src="img/logotype.png" alt="Mondo Books" class="logo">
+		<img src="img/logotypemon.png" alt="Mondo Books" class="logo">
 		<li><div class = "searchform">
 			<form method="get" action="listprod.jsp">
 			<input type="text" placeholder="Search  " name="productName" size="50">

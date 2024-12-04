@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login Screen</title>
+    <title>Login Screen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css"> <!-- Link to the new login-specific CSS -->
 </head>
 <body>
-
-<div style="margin:0 auto;text-align:center;display:inline">
-
-<h3>Please Login to System</h3>
-
-<%
-// Print prior error login message if present
-if (session.getAttribute("loginMessage") != null)
-	out.println("<p>"+session.getAttribute("loginMessage").toString()+"</p>");
-%>
-
-<br>
-<form name="MyForm" method=post action="validateLogin.jsp">
-<table style="display:inline">
-<tr>
-	<td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Username:</font></div></td>
-	<td><input type="text" name="username"  size=10 maxlength=10></td>
-</tr>
-<tr>
-	<td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Password:</font></div></td>
-	<td><input type="password" name="password" size=10 maxlength="10"></td>
-</tr>
-</table>
-<br/>
-<input class="submit" type="submit" name="Submit2" value="Log In">
-</form>
-
-</div>
-
+    <div class="login-container">
+	
+		<button class="btn"><img src="img/back.png"> </a></button>
+		<img src="img/logotypemon.png" alt="Mondo Books" class="logo">
+		
+        <h3>Sign in to your account</h3>
+        <% 
+        // Display any login messages
+        if (session.getAttribute("loginMessage") != null)
+            out.println("<p class='error-message'>" + session.getAttribute("loginMessage").toString() + "</p>");
+        %>
+		<form name="MyForm" method="post" action="validateLogin.jsp">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" maxlength="10" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" maxlength="10" required>
+			<a href="forgot-password.jsp" class="forgot-password">Forgot your password?</a>
+            <input type="submit" name="Submit2" value="Log In">
+        </form>
+        <h4>New to Mondo?  <a href="create-account.jsp">Create account</a></h6
+    </div>
 </body>
 </html>
-
