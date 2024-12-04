@@ -12,7 +12,7 @@
         <!-- Navigation header -->
         <nav>
             <ul>
-                <li><a href="index.jsp">Home</a></li>
+                <li><a href="shop.html">Home</a></li>
                 <li><a href="listprod.jsp">Shop</a></li>
                 <li><a href="admin.jsp">Administrators</a></li>
             </ul>
