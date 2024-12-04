@@ -1,22 +1,9 @@
--- Bookstore DDL created by ChatGPT for user (December 2024)
-
-<<<<<<< HEAD
 CREATE DATABASE bookstore;
 go
 
 USE bookstore;
 go
 
-=======
-CREATE DATABASE Bookstore;
-go
-
-USE Bookstore;
-go
-
-
->>>>>>> 4488b1b (Added Bookstore ddl)
--- Create table for customers
 CREATE TABLE customer (
     customerId          INT IDENTITY PRIMARY KEY,
     firstName           VARCHAR(40) NOT NULL,
