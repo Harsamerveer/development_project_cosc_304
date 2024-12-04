@@ -9,7 +9,6 @@ go
 
 
 
->>>>>>> 4488b1b (Added Bookstore ddl)
 -- Create table for customers
 CREATE TABLE customer (
     customerId          INT IDENTITY PRIMARY KEY,
