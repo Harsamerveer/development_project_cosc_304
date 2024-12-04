@@ -7,14 +7,15 @@
 	try
 	{
 		authenticatedUser = validateLogin(out,request,session);
+	} catch(IOException e){	
+		System.err.println(e); 
 	}
-	catch(IOException e)
-	{	System.err.println(e); }
 
-	if(authenticatedUser != null)
+	if(authenticatedUser != null){
 		response.sendRedirect("index.jsp");		// Successful login
-	else
+	}else {
 		response.sendRedirect("login.jsp");		// Failed login - redirect back to login page with a message 
+	}
 %>
 
 

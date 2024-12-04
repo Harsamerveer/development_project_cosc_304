@@ -3,10 +3,19 @@ body {
     background-color: #f0f1d3; /* Beige background */
     font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
     margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 10px;
+    gap: 20px;
+    position: relative;
+    z-index: 10; /* Ensure it's above other elements */
 }
 
 .login-container {
@@ -17,6 +26,8 @@ body {
     width: 100%;
     max-width: 400px;
     text-align: center;
+    margin-top: 100px;
+    margin-left: 520px; /* Add space from the left */
 }
 
 h3 {
@@ -93,6 +104,11 @@ nav .logo-container {
     font-size: 16px;
     border-radius: 5px;
     margin-right: 135px;
+}
+
+.btn a {
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn img {
